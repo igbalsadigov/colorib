@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#headerBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-bottom: 2px solid;
+}
+#headerBox .containerBox {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#headerBox .containerBox h1 span {
+  color: red;
+}
+#headerBox .containerBox .navbar {
+  display: flex;
+  gap: 15px;
+}
+#headerBox .containerBox .navbar nav ul {
+  display: flex;
+  gap: 10px;
+}
+#headerBox .containerBox .navbar nav ul li {
+  list-style-type: none;
+}
+#headerBox .containerBox .navbar nav ul li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+#oneSection {
+  background-image: url(/slider_1.jpg);
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#oneSection .containerBack {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+#oneSection .containerBack .textBox {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#oneSection .containerBack .textBox p {
+  font-family: itim;
+}
+#oneSection .containerBack .textBox h1 {
+  font-size: 50px;
+  font-family: poppins;
+  font-weight: 500;
+}
+#oneSection .containerBack .textBox button {
+  width: 30%;
+  height: 40px;
+  background-color: red;
+  color: white;
+  font-family: poppins;
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  nav {
+    display: none;
+  }
+  #oneSection .containerBack .textBox {
+    width: 85%;
+  }
+  #oneSection .containerBack .textBox h1 {
+    font-size: 30px;
+  }
+}
